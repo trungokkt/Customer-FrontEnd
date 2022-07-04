@@ -18,7 +18,7 @@ $controllers = array(
 );
 
 if (!array_key_exists($controller, $controllers) || !in_array($action, $controllers[$controller])) {
-    redirect_to(ERROR_URI);
+    redirect_to(ERROR_URI); 
 }
 
 require(CONTROLLER_PATH . "{$controller}_controller.php");
